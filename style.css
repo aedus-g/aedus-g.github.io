@@ -47,15 +47,12 @@ main {
 	border-radius: 12px;
 }
 
-.game-preview {
-	background: #0b0b10;
-	border: 2px dashed #2c2c38;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #666;
-	font-size: 12px;
-	height: 200px;
+.preview img {
+  width: 100%;
+  max-width: 420px;
+  image-rendering: pixelated;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
 .game-info h3 {
@@ -111,3 +108,4 @@ footer {
 		grid-template-columns: 1fr;
 	}
 }
+
