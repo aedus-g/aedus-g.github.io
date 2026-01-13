@@ -4,12 +4,10 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Aedus G | Indie Game Dev</title>
-
+	<link rel="stylesheet" href="style.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -18,45 +16,44 @@
 		<p class="tagline">Indie Game Developer · Pixel Games</p>
 	</header>
 
-	<main class="container">
-		<section class="products">
+	<main>
+		<section class="game-card">
 			<h2>🎮 Products</h2>
-
-			<article class="game-card">
-				<div class="game-preview">
-					<img src="assets/images/rolling-on.png" alt="Rolling On Gameplay Preview">
+			<div class="game-box">
+				<div class="preview">
+					<img src="assets/images/rolling-on.png" alt="Gameplay Preview">
 				</div>
 
-				<div class="game-content">
+				<div class="game-info">
 					<h3>Rolling On!</h3>
 					<p>
 						Jump, dodge obstacles, and adventure through stunning pixel worlds!
 					</p>
 
-					<div class="actions">
-						<a class="btn primary"
+					<div class="buttons">
+						<a class="play-btn"
 						   href="https://play.google.com/store/apps/details?id=com.aedus_g.rolling_on"
-						   target="_blank" rel="noopener">
-							Play on Google Play
+						   target="_blank">
+						   Play on Google Play
 						</a>
 
-						<a class="btn primary disabled">
-							Play on App Store <span class="soon">(Coming Soon)</span>
+						<a class="play-btn disabled"
+						   href="javascript:void(0)">
+						   Play on App Store <span class="soon">(Coming Soon)</span>
 						</a>
-
+					
 						<a class="btn outline"
 						   href="rolling-on-privacy-policy.html"
-						   target="_blank" rel="noopener">
-							Privacy Policy
+						   target="_blank">
+						   Privacy Policy
 						</a>
 					</div>
 				</div>
-			</article>
-
+			</div>
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer>
 		<p>© 2026 Aedus G · Made with passion</p>
 	</footer>
 
