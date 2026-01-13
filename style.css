@@ -68,7 +68,31 @@ main {
 
 .buttons {
 	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+/* 2 nút store */
+.store-buttons {
+	display: flex;
 	gap: 12px;
+}
+
+.store-buttons .play-btn {
+	flex: 1;
+	text-align: center;
+	margin-top: 0; /* bỏ margin-top cũ */
+}
+
+/* Privacy Policy */
+.privacy-btn {
+	align-self: flex-start;
+	font-size: 12px;
+	opacity: 0.85;
+}
+
+.privacy-btn:hover {
+	opacity: 1;
 }
 
 .btn {
@@ -140,3 +164,4 @@ footer {
 		grid-template-columns: 1fr;
 	}
 }
+
