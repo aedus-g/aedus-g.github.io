@@ -81,7 +81,6 @@ main {
 .store-buttons .play-btn {
 	flex: 1;
 	text-align: center;
-	margin-top: 0; /* bỏ margin-top cũ */
 }
 
 /* Privacy Policy */
@@ -164,4 +163,5 @@ footer {
 		grid-template-columns: 1fr;
 	}
 }
+
 
