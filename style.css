@@ -47,12 +47,15 @@ main {
 	border-radius: 12px;
 }
 
-.preview img {
-  width: 100%;
-  max-width: 420px;
-  image-rendering: pixelated;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+.game-preview {
+	background: #0b0b10;
+	border: 2px dashed #2c2c38;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #666;
+	font-size: 12px;
+	height: 200px;
 }
 
 .game-info h3 {
@@ -68,30 +71,7 @@ main {
 
 .buttons {
 	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
-
-/* 2 nút store */
-.store-buttons {
-	display: flex;
 	gap: 12px;
-}
-
-.store-buttons .play-btn {
-	flex: 1;
-	text-align: center;
-}
-
-/* Privacy Policy */
-.privacy-btn {
-	align-self: flex-start;
-	font-size: 12px;
-	opacity: 0.85;
-}
-
-.privacy-btn:hover {
-	opacity: 1;
 }
 
 .btn {
@@ -106,38 +86,6 @@ main {
 
 .btn:hover {
 	background: #6d85ff;
-}
-
-.play-btn {
-  display: inline-block;
-  margin-top: 16px;
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #4A9FF5, #9B6BFF);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.play-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
-}
-
-.play-btn.disabled {
-	background: linear-gradient(135deg, #444, #666);
-	cursor: not-allowed;
-	pointer-events: none;
-	opacity: 0.75;
-}
-
-.play-btn .soon {
-	font-size: 11px;
-	font-weight: 400;
-	opacity: 0.85;
-	margin-left: 4px;
 }
 
 .btn.outline {
@@ -163,5 +111,3 @@ footer {
 		grid-template-columns: 1fr;
 	}
 }
-
-
