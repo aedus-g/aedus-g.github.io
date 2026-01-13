@@ -68,53 +68,31 @@ main {
 
 .buttons {
 	display: flex;
+	flex-direction: column;
 	gap: 12px;
+	max-width: 320px;
 }
 
-.btn {
-	padding: 10px 16px;
-	background: #4f6dff;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 6px;
+/* PRIMARY */
+.play-btn.primary {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	padding: 14px 20px;
+}
+
+/* SECONDARY */
+.play-btn.secondary {
 	font-size: 13px;
-	transition: 0.2s;
+	padding: 10px 18px;
+	border-radius: 10px;
 }
 
-.btn:hover {
-	background: #6d85ff;
-}
-
-.play-btn {
-  display: inline-block;
-  margin-top: 16px;
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #4A9FF5, #9B6BFF);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.play-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
-}
-
-.play-btn.disabled {
-	background: linear-gradient(135deg, #444, #666);
-	cursor: not-allowed;
-	pointer-events: none;
-	opacity: 0.75;
-}
-
-.play-btn .soon {
-	font-size: 11px;
-	font-weight: 400;
-	opacity: 0.85;
-	margin-left: 4px;
+/* SMALL LINK */
+.btn.small {
+	font-size: 12px;
+	padding: 8px 14px;
+	align-self: flex-start;
 }
 
 .btn.outline {
@@ -140,3 +118,4 @@ footer {
 		grid-template-columns: 1fr;
 	}
 }
+
